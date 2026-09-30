@@ -1,15 +1,15 @@
 {
 	"compilerOptions": {
 		/* Language & runtime */
-		"target": "ES2022",
-		"lib": ["ES2022"],
+		"target": "esnext",
+		"lib": ["esnext"],
 
 		/* Node ESM */
 		"module": "nodenext",
 		"moduleResolution": "nodenext",
 
 		/* Project structure */
-		"rootDir": "src",
+		"rootDirs": ["src", "./"],
 		"outDir": "dist",
 
 		/* Type safety */
@@ -28,7 +28,7 @@
 		"skipLibCheck": true,
 
 		/* Environment types */
-		"types": ["node"],
+		"types": ["node"]
 	},
-	"include": ["src"]
+	"include": ["src", "drizzle.config.ts"]
 }
